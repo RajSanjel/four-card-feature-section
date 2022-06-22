@@ -1,0 +1,156 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap');
+
+:root {
+    --red: hsl(0, 78%, 62%);
+    --cyan: hsl(180, 62%, 55%);
+    --range: hsl(34, 97%, 64%);
+    --blue: hsl(212, 86%, 64%);
+    --very-dark-blue: hsl(234, 12%, 34%);
+    --grayish-blue: hsl(229, 6%, 66%);
+    --very-light-gray: hsl(0, 0%, 98%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Poppins;
+}
+
+body {
+    min-width: 95vw;
+    min-height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: var(--very-light-gray);
+}
+
+main {
+    padding: 10px;
+    margin-top: 80px;
+    width: 350px;
+    height: 100%;
+}
+
+.main-texts {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+
+.main-texts h1 {
+    font-weight: 200;
+    font-size: 24px;
+    color: var(--very-dark-blue);
+
+
+}
+
+.main-texts h2 {
+    font-weight: 600;
+    font-size: 24px;
+    color: var(--very-dark-blue);
+}
+
+.main-texts p {
+    font-size: 15px;
+    color: var(--grayish-blue);
+}
+
+.col-wrapper {
+    display: grid;
+    justify-content: center;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4 {
+    width: 290px;
+    height: 180px;
+    margin-top: 20px;
+    background-color: white;
+    filter: drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.15));
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.col-wrapper h2 {
+    font-size: 23px;
+    font-weight: 600;
+    color: var(--very-dark-blue);
+}
+
+.col-wrapper p {
+    font-size: 15px;
+    color: var(--grayish-blue);
+}
+
+.col-1 {
+    border-top: 4px solid var(--cyan);
+    background-image: url('../images/icon-supervisor.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 85%;
+}
+
+.col-2 {
+    border-top: 4px solid var(--red);
+    background-image: url('../images/icon-team-builder.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 85%;
+}
+
+.col-3 {
+    border-top: 4px solid var(--range);
+    background-image: url('../images/icon-karma.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 85%;
+}
+
+.col-4 {
+    border-top: 4px solid var(--blue);
+    background-image: url('../images/icon-calculator.svg');
+    background-repeat: no-repeat;
+    background-position: 85% 85%;
+}
+
+@media (min-width:800px) {
+    main {
+        width: 100%;
+        margin-top: 160px;
+    }
+
+    .col-wrapper {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .middle-col {
+        padding: 40px;
+    }
+
+    .col-3 {
+        margin-top: 40px;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+.main-texts{
+    width: 500px;
+}
+    .main-texts h1 {
+        font-size: 30px;
+    }
+
+    .main-texts h2 {
+        font-size: 30px;
+    }
+    .main-texts p {
+        margin-top: 15px;
+    }
+
+}
